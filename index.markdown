@@ -1,6 +1,32 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
+title: Home
+permalink: /
 ---
+
+# Embedded Systems Engineer
+
+I design and deliver reliable embedded hardware and firmware solutions for automotive and industrial applications. My work spans board design, firmware development, debugging, production support, and continuous improvement across the full product lifecycle.
+
+## What I bring
+
+- Hardware design and PCB layout for high-speed and mixed-signal systems
+- Firmware development for RTOS-based embedded platforms
+- Root-cause analysis and field issue resolution
+- Experience with BMS, EMI mitigation, and controlled-impedance routing
+- End-to-end ownership from concept through manufacturing and deployment
+
+## Selected focus areas
+
+- Automotive and industrial IoT systems
+- Embedded product development and validation
+- PCB design and layout optimization
+- Firmware debugging and production support
+
+## Featured work
+
+- Delivered hardware and firmware revisions that improved reliability and manufacturability
+- Supported product deployment with hands-on field issue investigation and corrective actions
+- Contributed to design decisions across schematic capture, layout, bring-up, and testing
+
+Explore my [experience](/experience/) and [projects](/projects/) to see how I apply these skills in practice.
