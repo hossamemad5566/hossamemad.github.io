@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-permalink: /contact/
+permalink: /about /contact/
 ---
 
 If you would like to connect, I would be happy to discuss embedded systems projects, hardware design, firmware development, or collaboration opportunities.
