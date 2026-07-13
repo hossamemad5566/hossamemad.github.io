@@ -4,7 +4,11 @@ export interface Project {
   tags: string[];
   href: string;
   image: string;
+  images: string[];
   accent: string;
+  overview: string;
+  challenge: string;
+  outcome: string;
 }
 
 export const featuredProjects: Project[] = [
@@ -14,7 +18,11 @@ export const featuredProjects: Project[] = [
     tags: ['ESP32', 'RTOS', 'Manufacturing', 'GPS'],
     href: '/projects/seifence',
     image: '/images/projects/seifence.jpg',
+    images: ['/images/projects/seifence.jpg', '/images/hero/pcb-hero.png'],
     accent: 'from-sky-500/30 to-cyan-400/10',
+    overview: 'The project focused on a compact tracker designed for field deployment, reliable telemetry, and manufacturable assembly.',
+    challenge: 'The main challenge was combining wireless connectivity, positioning, and resilient firmware in a compact enclosure for real-world deployment.',
+    outcome: 'The final system delivered dependable tracking, strong manufacturability, and a clear path to scaled deployment.',
   },
   {
     title: 'Battery Management System',
@@ -22,14 +30,22 @@ export const featuredProjects: Project[] = [
     tags: ['BMS', 'Power', 'Protection', 'DC/DC'],
     href: '/projects/bms',
     image: '/images/projects/bms.jpg',
+    images: ['/images/projects/bms.jpg', '/images/projects/seitech.png'],
     accent: 'from-emerald-500/30 to-lime-400/10',
+    overview: 'This work centered on protecting a multi-cell energy storage system while preserving efficiency and safe charging behavior.',
+    challenge: 'The design required balancing protection accuracy, high-current switching, and a practical layout for assembly and validation.',
+    outcome: 'The solution improved safe operation and created a robust foundation for the power stage and monitoring logic.',
   },
   {
     title: 'Industrial IoT Gateway',
     summary: 'A rugged gateway for industrial telemetry with RS485, BLE, Wi-Fi, and 4G connectivity.',
     tags: ['ESP32-S3', 'RS485', 'Wi-Fi', 'BLE'],
     href: '/projects/industrial-iot-gateway',
-    image: '/images/projects/seitech.jpg',
+    image: '/images/projects/seitech.png',
+    images: ['/images/projects/seitech.png', '/images/hero/pcb-hero.png'],
     accent: 'from-violet-500/30 to-fuchsia-400/10',
+    overview: 'The gateway was engineered to connect industrial equipment to cloud-based monitoring using resilient communications.',
+    challenge: 'The project needed strong industrial protocol support, long-term stability, and interface flexibility across multiple transport layers.',
+    outcome: 'The gateway delivered a strong communications foundation for remote monitoring and practical field deployment.',
   },
 ];
