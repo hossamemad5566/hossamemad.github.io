@@ -3,9 +3,10 @@
 :root {
   color-scheme: dark;
   font-family: 'Inter', sans-serif;
+  font-size: 18px;
   background-color: #050816;
   color: #f5f7ff;
-  --text-muted: #93a3bb;
+  --text-muted: #a8b7cc;
 }
 
 html {
@@ -20,7 +21,8 @@ body {
     radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.16), transparent 28%),
     linear-gradient(135deg, #030611 0%, #050816 55%, #07111f 100%);
   color: #f5f7ff;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1.0625rem;
 }
 
 * {
@@ -30,10 +32,13 @@ body {
 h1, h2, h3 {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 p {
   color: var(--text-muted);
+  font-size: 1.0625rem;
+  line-height: 1.75;
 }
 
 ::selection {

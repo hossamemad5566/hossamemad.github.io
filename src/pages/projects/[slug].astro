@@ -15,12 +15,12 @@ const { project } = Astro.props;
 <Layout title={`${project.title} | Hossam Emad`}>
   <main class="mx-auto max-w-6xl px-6 py-20 lg:px-8">
     <section class="rounded-[2rem] border border-white/10 bg-slate-900/70 p-8 shadow-2xl shadow-slate-950/50 lg:p-12">
-      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-300">Case Study</p>
-      <h1 class="mt-4 text-4xl font-semibold text-white sm:text-5xl">{project.title}</h1>
-      <p class="mt-6 text-xl leading-8 text-slate-300">{project.summary}</p>
+      <p class="text-base font-semibold uppercase tracking-[0.35em] text-sky-300">Case Study</p>
+      <h1 class="mt-4 text-5xl font-semibold text-white sm:text-6xl">{project.title}</h1>
+      <p class="mt-6 text-2xl leading-9 text-slate-200">{project.summary}</p>
       <div class="mt-8 flex flex-wrap gap-3">
         {project.tags.map((tag) => (
-          <span class="rounded-full border border-sky-400/20 bg-sky-500/10 px-4 py-2 text-sm font-medium text-sky-200">{tag}</span>
+          <span class="rounded-full border border-sky-400/20 bg-sky-500/10 px-4 py-2 text-base font-medium text-sky-200">{tag}</span>
         ))}
       </div>
     </section>
@@ -30,19 +30,19 @@ const { project } = Astro.props;
         <img src={project.images[0]} alt={project.title} class="h-80 w-full object-cover" />
       </div>
       <div class="rounded-[1.75rem] border border-white/10 bg-slate-900/60 p-8">
-        <h2 class="text-2xl font-semibold text-white">Overview</h2>
-        <p class="mt-4 text-lg leading-8 text-slate-300">{project.overview}</p>
+        <h2 class="text-3xl font-semibold text-white">Overview</h2>
+        <p class="mt-4 text-xl leading-9 text-slate-200">{project.overview}</p>
       </div>
     </section>
 
     <section class="mt-8 grid gap-6 lg:grid-cols-2">
       <div class="rounded-[1.75rem] border border-white/10 bg-slate-900/60 p-8">
-        <h2 class="text-2xl font-semibold text-white">Challenge</h2>
-        <p class="mt-4 text-lg leading-8 text-slate-300">{project.challenge}</p>
+        <h2 class="text-3xl font-semibold text-white">Challenge</h2>
+        <p class="mt-4 text-xl leading-9 text-slate-200">{project.challenge}</p>
       </div>
       <div class="rounded-[1.75rem] border border-white/10 bg-slate-900/60 p-8">
-        <h2 class="text-2xl font-semibold text-white">Outcome</h2>
-        <p class="mt-4 text-lg leading-8 text-slate-300">{project.outcome}</p>
+        <h2 class="text-3xl font-semibold text-white">Outcome</h2>
+        <p class="mt-4 text-xl leading-9 text-slate-200">{project.outcome}</p>
       </div>
     </section>
 

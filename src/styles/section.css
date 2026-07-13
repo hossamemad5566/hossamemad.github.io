@@ -5,15 +5,15 @@ section {
 }
 
 .section-heading {
-  font-size: clamp(1.7rem, 2.2vw, 2.35rem);
+  font-size: clamp(2.1rem, 2.8vw, 2.9rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   color: #f8fbff;
 }
 
 .section-copy {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.9;
-  color: #9fb0c7;
+  color: #b3c1d6;
   max-width: 760px;
 }
