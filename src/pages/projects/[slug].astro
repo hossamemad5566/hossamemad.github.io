@@ -46,12 +46,18 @@ const { project } = Astro.props;
       </div>
     </section>
 
-    <section class="mt-8 grid gap-6 md:grid-cols-2">
-      {project.images.slice(1).map((image) => (
-        <div class="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/60">
-          <img src={image} alt={`${project.title} detail`} class="h-64 w-full object-cover" />
+    <section class="mt-8">
+      <div class="rounded-[1.75rem] border border-white/10 bg-slate-900/60 p-8">
+        <p class="text-sm uppercase tracking-[0.3em] text-sky-300">Gallery</p>
+        <h2 class="mt-2 text-3xl font-semibold text-white">All project photos</h2>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {project.images.slice(1).map((image) => (
+            <a href={image} target="_blank" rel="noopener" class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950/40">
+              <img src={image} alt={`${project.title} detail`} class="h-56 w-full object-cover transition duration-300 group-hover:scale-105" />
+            </a>
+          ))}
         </div>
-      ))}
+      </div>
     </section>
 
     <section class="mt-8 flex flex-wrap gap-4">
